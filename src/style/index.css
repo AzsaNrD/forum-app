@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-rubik bg-gray-200;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+  content: attr(data-placeholder);
+  color: #6b7280;
+}
+
+.thread__body > div {
+  @apply text-gray-600 !important;
+}
